@@ -3,7 +3,8 @@ pipeline {
 
     stages {
         stage('echo') { 
-            steps { 
+            steps {
+                powershell 'ls' 
                 powershell 'echo.ps1'
             }
         }
