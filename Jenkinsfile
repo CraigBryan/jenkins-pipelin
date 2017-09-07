@@ -5,7 +5,7 @@ pipeline {
         stage('echo') { 
             steps {
                 powershell 'ls' 
-                powershell 'echo.ps1'
+                powershell './echo.ps1'
             }
         }
     }
